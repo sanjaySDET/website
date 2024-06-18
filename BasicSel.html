@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px;
+            color: #ffff00;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #f2f2f2;
+        }
+
+        .data img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .data p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #f2f2f2;
+        }
+
+        .container a {
+            font-size: 1.2em;
+            color: #ffb3e6;
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 10px;
+            color: #c4ff4d;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #f2f2f2;
+        }
+
+        ul li a {
+            font-size: 1.2em;
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 60px;
+            color: #f2f2f2;
+        }
+    </style>
+    <title>Basic Selenium</title>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/2516159-hd_1920_1080_24fps.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cd-slider-nav">
+                        <nav class="navbar navbar-expand-lg" id="tm-nav">
+                            <a class="navbar-brand" href="#">Basic Selenium</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <img src="selenium.png" alt="Basic Selenium Photo">
+                <h1>Basic Selenium</h1>
+                <p>Hi everyone, I am Jason Huggins. Welcome to the world of Basic Selenium!</p>
+            </div>
+            <div class="data">
+                <p>I'm excited to introduce you to the fundamentals of Selenium for web testing. Selenium is a powerful tool used for automating web browsers, allowing you to write tests in various programming languages like Java, Python, and C#. Let's explore the basics and get started with automated testing with Trainer <i>Shobha Rani</i>.</p>
+            </div>
+            <p>Click on the link below to open MavenRepository:</p>
+            <a href="https://mvnrepository.com/">Maven Repository</a>
+            <p>Click on the link below to Selenium Website:</p>
+            <a href="https://www.selenium.dev/">Selenium</a>
+            <p>Click on the link below to get .exe files:</p>
+            <a href="https://googlechromelabs.github.io/chrome-for-testing/">chromeDriver</a><br>
+            <a href="https://github.com/mozilla/geckodriver/releases/">geckoDriver (Firefox)</a><br>
+            <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads">EdgeDriver</a>
+            <p>To practice Selenium:</p>
+            <a href="https://demoapps.qspiders.com/ui?scenario=1">Practice</a><br></br>
+
+            <h1>Table of Contents - Basic Selenium</h1>
+            <ul>
+                <li><a href="#introduction">Introduction to Selenium</a></li>
+                <li><a href="#setup">Setting Up Selenium</a></li>
+                <li><a href="#firsttest">Creating Your First Selenium Test</a></li>
+                <li><a href="#locators">Selenium Locators</a></li>
+                <li><a href="#Drop">Interacting with Dropdowns/ListBox</a></li>
+                <li><a href="#actions">Mouse control Actions</a></li>
+                <li><a href="#waits">Selenium Waits</a></li>
+                <li><a href="#JavaScript">JavaScriptExecuitor</a></li>
+                <li><a href="#key">KeyBoard Actions</a></li>
+                <li><a href="#Popups">Handling Popups</a></li>
+            </ul>
+
+            <hr>
+
+            <section id="introduction">
+                <h2>Introduction to Selenium</h2>
+                <ul>
+                    <li>What is Selenium?</li>
+                    <li>History and Evolution</li>
+                    <li>Advantages of Selenium</li>
+                </ul>
+            </section>
+
+            <section id="setup">
+                <h2>Setting Up Selenium</h2>
+                <ul>
+                    <li>Installing Selenium WebDriver</li>
+                    <li>Configuring Selenium Environment</li>
+                    <li>Setting Up Integrated Development Environment (IDE)</li>
+                </ul>
+            </section>
+
+            <section id="firsttest">
+                <h2>Creating Your First Selenium Test</h2>
+                <ul>
+                    <li>Writing Test Scripts</li>
+                    <li>Running Test Cases</li>
+                    <li>Debugging and Troubleshooting</li>
+                </ul>
+            </section>
+
+            <section id="locators">
+                <h2>Selenium Locators</h2>
+                <ul>
+                    <li>Types of Locators</li>
+                    <li>Using ID, Name, XPath, CSS Selector, etc.</li>
+                    <li>Best Practices for Locating Elements</li>
+                </ul>
+            </section>
+
+            <section id="Drop">
+                <h2>Interacting with Dropdowns/ListBox</h2>
+                <ul>
+                    <li>Single Select Dropdown</li>
+                    <li>Multi Select Dropdown</li>
+                    <li>Different ways to handle dropdowns etc...</li>
+                </ul>
+            </section>
+
+            <section id="actions">
+                <h2>Mouse control Actions</h2>
+                <ul>
+                    <li>MouseOver on a Element</li>
+                    <li>Drag and Drop</li>
+                    <li>Double click</li>
+                    <li>Click and Hold</li>
+                    <li>ScrollToElement etc....</li>
+                </ul>
+            </section>
+
+            <section id="waits">
+                <h2>Selenium Waits</h2>
+                <ul>
+                    <li>Implicit vs. Explicit Waits</li>
+                    <li>Fluent Waits</li>
+                    <li>Using Expected Conditions</li>
+                </ul>
+            </section>
+
+            <section id="JavaScript">
+                <h2>JavaScriptExecuitor</h2>
+                <ul>
+                    <li>Scrolling a Webpage</li>
+                    <li>Clicking Buttons and Links</li>
+                    <li>Handling Disabled Elements</li>
+                </ul>
+            </section>
+
+            <section id="key">
+                <h2>KeyBoard Actions</h2>
+                <ul>
+                    <li>Robot class</li>
+                    <li>Keyboard Actions etc...</li>
+                </ul>
+            </section>
+
+            <section id="Popups">
+                <h2>Handling Popups</h2>
+                <ul>
+                    <li>Types of Popups</li>
+                    <li>Handling Alert and Confirmation Popups</li>
+                    <li>File Upload and Download Popups</li>
+                    <li>Modal Dialog Boxes etc...</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

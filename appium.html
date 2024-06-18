@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appium using JAVA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #d9ffb3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px;
+            color: #1a73e8; /* Changed to a shade of blue */
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #ffffcc; /* Changed from #ffffcc to dark gray */
+        }
+
+        .data img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .data p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #ffffcc; /* Changed to black */
+        }
+
+        .container a {
+            font-size: 1.2em;
+            color: #ffccff; /* Changed from #ff9900 to a shade of blue */
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 10px;
+            color: #d32f2f; /* Changed to a shade of red */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #d6d6c2; /* Changed to a shade of indigo */
+        }
+
+        ul li a {
+            font-size: 1.2em;
+            color: #d6d6c2; /* Changed from #007bff to a shade of blue */
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 60px;
+            color: #d6d6c2; /* Changed to black */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/7272375-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cd-slider-nav">
+                        <nav class="navbar navbar-expand-lg" id="tm-nav">
+                            <a class="navbar-brand" href="#">Java Appium</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <img src="appium.png" alt="Appium Photo">
+                <h1>Appium</h1>
+                <p>Hi everyone, I am Dan Cuellar. Welcome to the world of Appium with Java!</p>
+            </div>
+            <div class="data">
+                <p>In this section, we'll explore the basics of mobile automation using Appium with Java. Appium is a popular open-source tool for automating native, hybrid, and mobile web applications on iOS and Android platforms. Let's explore Appium and get started with automated testing with Trainer <i>Shobha Rani</i>.</p>
+            </div>
+            <p>Click on the links below for more resources:</p>
+            <a href="#setup">Setting Up Appium with Java</a><br>
+            <a href="#capabilities">Appium Desired Capabilities</a><br>
+            <a href="#elements">Locating Mobile Elements</a><br>
+            <a href="#actions">Touch Actions</a><br>
+            <a href="#waits">Waits</a><br>
+            <a href="#DataDriven">Data Driven Testing</a><br>
+            <a href="#jdbc">Database Testing with JDBC</a><br>
+            <a href="#GenericUtility">Generic Utilities</a><br>
+            <a href="#pom">Page Object Model (POM) Class</a><br>
+            <a href="#testng">TestNG Framework</a><br>
+            <a href="#maven">Maven Build Tool</a><br>
+            <a href="#github">Version Control with GitHub</a><br>
+            <a href="#jenkins">Continuous Integration with Jenkins</a><br>
+            <a href="#framework">Framework Implementation</a><br>
+            <a href="#reports">Generating Reports</a><br>
+
+            <hr>
+
+            <section id="setup">
+                <h2>Setting Up Appium with Java</h2>
+                <p>Appium is an open-source tool for automating native, hybrid, and mobile web applications on iOS and Android platforms. Follow these steps to set up Appium with Java:</p>
+                <ol>
+                    <li>Install Java Development Kit (JDK) if not already installed.</li>
+                    <li>Install Android Studio for Android SDK and emulator management. <a href="https://developer.android.com/studio">Click here to download Android Studio</a>.</li>
+                    <li>Install Node.js from <a href="https://nodejs.org/">https://nodejs.org/</a>.</li>
+                    <li>Install Appium server using npm: <code>npm install -g appium</code>.</li>
+                    <li>Set up your test environment and configure Appium with your chosen IDE.</li>
+                </ol>
+            </section>
+
+            <section id="capabilities">
+                <h2>Appium Desired Capabilities</h2>
+                <p>Explanation of Desired Capabilities and how to configure them for iOS and Android devices:</p>
+                <ul>
+                    <li><code>platformName</code>: Specifies the platform (Android or iOS).</li>
+                    <li><code>platformVersion</code>: Version of the mobile operating system.</li>
+                    <li><code>deviceName</code>: Name of the device/emulator.</li>
+                    <li><code>automationName</code>: Appium automation engine (UiAutomator2 for Android).</li>
+                    <li><code>appPackage</code>: Android application package name.</li>
+                    <li><code>appActivity</code>: Android activity name for the application's main entry point.</li>
+                </ul>
+            </section>
+
+            <section id="elements">
+                <h2>Locating Mobile Elements</h2>
+                <p>Examples of how to locate mobile elements using XPath, ID, Name, etc., with Java.</p>
+            </section>
+
+            <section id="actions">
+                <h2>Touch Actions</h2>
+                <p>How to perform touch actions such as tap, swipe, scroll, and pinch using Java with Appium.</p>
+            </section>
+
+            <section id="waits">
+                <h2>Waits</h2>
+                <ul>
+                    <li>Implicit vs. Explicit Waits</li>
+                    <li>Fluent Waits</li>
+                    <li>Using Expected Conditions</li>
+                </ul>
+            </section>
+
+            <section id="DataDriven">
+                <h2>Data Driven Testing</h2>
+                <ul>
+                    <li>Handling Property File</li>
+                    <li>Handling Excel File</li>
+                    <li>Handling JSON File</li>
+                    <li>Handling Txt File</li>
+                    <li>Handling PDF etc...</li>
+                </ul>
+            </section>    
+
+            <section id="jdbc">
+                <h2>Database Testing with JDBC</h2>
+                <ul>
+                    <li>Introduction to JDBC</li>
+                    <li>Setting Up JDBC with Selenium</li>
+                    <li>Connecting to a Database</li>
+                    <li>Executing SQL Queries</li>
+                    <li>Validating Data with JDBC</li>
+                    <li>Best Practices for Database Testing</li>
+                </ul>
+            </section>
+
+            <section id="GenericUtility">
+                <h2>Generic Utilities</h2>
+                <ul>
+                    <li>Java Utility</li>
+                    <li>File Utility</li>
+                    <li>Excel Utility</li>
+                    <li>Touch Actions Utility etc...</li>
+                </ul>
+            </section>
+
+            <section id="pom">
+                <h2>Page Object Model (POM) Class</h2>
+                <ul>
+                    <li>Introduction to POM</li>
+                    <li>Creating POM Classes</li>
+                    <li>Implementing POM in Tests</li>
+                </ul>
+            </section>
+
+            <section id="testng">
+                <h2>TestNG Framework</h2>
+                <ul>
+                    <li>Introduction to TestNG</li>
+                    <li>Setting Up TestNG</li>
+                    <li>Creating TestNG Tests</li>
+                    <li>Annotations in TestNG</li>
+                </ul>
+            </section>
+
+            <section id="maven">
+                <h2>Maven Build Tool</h2>
+                <ul>
+                    <li>Introduction to Maven</li>
+                    <li>Setting Up Maven</li>
+                    <li>Creating Maven Projects</li>
+                    <li>Managing Dependencies with Maven</li>
+                </ul>
+            </section>
+
+            <section id="github">
+                <h2>Version Control with GitHub</h2>
+                <ul>
+                    <li>Introduction to GitHub</li>
+                    <li>Setting Up GitHub Repository</li>
+                    <li>Committing Changes</li>
+                    <li>Collaborating with Others</li>
+                </ul>
+            </section>
+
+            <section id="jenkins">
+                <h2>Continuous Integration with Jenkins</h2>
+                <ul>
+                    <li>Introduction to Jenkins</li>
+                    <li>Setting Up Jenkins</li>
+                    <li>Creating Jenkins Jobs</li>
+                    <li>Configuring Build Triggers</li>
+                </ul>
+            </section>
+
+            <section id="framework">
+                <h2>Framework Implementation</h2>
+                <p>Overview of framework implementation for Appium with Java including architecture and best practices.</p>
+		<ul>
+                    <li>Introduction to Automation Frameworks</li>
+                    <li>Types of Automation Frameworks</li>
+                    <li>Creating a Test Automation Framework</li>
+                    <li>Implementing a Keyword-Driven Framework</li>
+                    <li>Implementing a Data-Driven Framework</li>
+                    <li>Implementing a Hybrid Framework</li>
+                    <li>Best Practices for Framework Implementation</li>
+                </ul>
+            </section>
+
+            <section id="reports">
+                <h2>Generating Reports</h2>
+                <p>Steps to generate test execution reports and tools used for reporting.</p>
+            </section>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>

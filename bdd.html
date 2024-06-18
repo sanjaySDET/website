@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #ffffcc;
+        }
+
+        .data img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .data p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .container a {
+            font-size: 1.2em;
+            color: #ffff00;
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3d3d29;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            font-size: 1.2em;
+            color: #3d3d29;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/15049243-hd_1920_1080_30fps (1).mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cd-slider-nav">
+                        <nav class="navbar navbar-expand-lg" id="tm-nav">
+                            <a class="navbar-brand" href="#">Cucumber BDD</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <img src="BDD.jpeg" alt="Aslak Hellesøy">
+                <h1>Java BDDCucumber </h1>
+                <p>Hi everyone, I am Aslak Hellesøy. Welcome to the world of Java Cucumber BDD!</p>
+            </div>
+            <div class="data">
+                <p>In this section, we'll explore the fundamentals of Behavior-Driven Development (BDD) with Cucumber in Java. BDD allows us to write tests in a natural language style, enhancing collaboration between technical and non-technical team members. Let's dive into the Java Cucumber BDD with Trainer <i>Shobha Rani</i>.</p>
+            </div>
+            <p>Below are some useful resources to get started:</p>
+            <a href="https://cucumber.io/">Cucumber Official Website</a>
+            <p>Click on the link below to open MavenRepository:</p>
+            <a href="https://mvnrepository.com/">Maven Repository</a>
+            <p>Click on the link below to Selenium Website</p>
+            <a href="https://www.selenium.dev/">Selenium</a>
+            <p>Click on the link below to get .exe files</p>
+            <a href="https://googlechromelabs.github.io/chrome-for-testing/">chromeDriver</a><br>
+            <a href="https://github.com/mozilla/geckodriver/releases/">geckoDriver (Firefox)</a><br>
+            <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH#downloads">EdgeDriver</a>
+            <p>Click on the link below to download Vtiger CRM Application:</p>
+            <a href="https://sourceforge.net/projects/vtigercrm/files/vtiger%20CRM%205.4.0/Core%20Product/vtigercrm-5.4.0.exe/download">Vtiger CRM</a>
+            <p>Click on the link below to download Maven</p>
+            <a href="https://dlcdn.apache.org/maven/maven-3/3.9.7/binaries/apache-maven-3.9.7-bin.zip">Maven</a>
+            <p>Click on the link below to sign up/login to GitHub</p>
+            <a href="https://github.com/">GitHub</a>
+            <p>Click on the link below to download Jenkins</p>
+            <a href="https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable">Jenkins</a>
+            <p>To practice Selenium</p>
+            <a href="https://demoapps.qspiders.com/ui?scenario=1">Practice</a><br></br>
+
+            <h1>Table of Contents - Basic Java Cucumber BDD</h1>
+            <ul>
+                <li><a href="#introduction">Introduction to Java Cucumber BDD</a></li>
+                <li><a href="#setup">Setting Up Java Cucumber</a></li>
+                <li><a href="#features">Writing Feature Files</a></li>
+                <li><a href="#stepdefinitions">Implementing Step Definitions</a></li>
+                <li><a href="#hooks">Using Hooks in Cucumber</a></li>
+                <li><a href="#tags">Tagging Scenarios</a></li>
+                <li><a href="#parameters">Scenario Outline with Examples</a></li>
+                <li><a href="#background">Using Background in Feature Files</a></li>
+                <li><a href="#reports">Generating Reports with Cucumber</a></li>
+                <li><a href="#bestpractices">Best Practices for Java Cucumber BDD</a></li>
+            </ul>
+
+            <hr>
+
+            <section id="introduction">
+                <h2>Introduction to Java Cucumber BDD</h2>
+                <p>Overview of Behavior-Driven Development (BDD) and its benefits. How Cucumber helps in implementing BDD in Java projects.</p>
+            </section>
+
+            <section id="setup">
+                <h2>Setting Up Java Cucumber</h2>
+                <p>Steps to configure Java, Cucumber, and Maven in Eclipse or any preferred IDE. Downloading necessary dependencies.</p>
+            </section>
+
+            <section id="features">
+                <h2>Writing Feature Files</h2>
+                <p>Creating feature files using Gherkin syntax to define application behavior in a human-readable format.</p>
+            </section>
+
+            <section id="stepdefinitions">
+                <h2>Implementing Step Definitions</h2>
+                <p>Writing step definitions in Java to map Gherkin steps to actual automation code.</p>
+            </section>
+
+            <section id="hooks">
+                <h2>Using Hooks in Cucumber</h2>
+                <p>Understanding hooks and their types (Before, After, BeforeStep, AfterStep) in Cucumber to manage setup and teardown activities.</p>
+            </section>
+
+            <section id="tags">
+                <h2>Tagging Scenarios</h2>
+                <p>Using tags to organize and execute specific scenarios or features selectively.</p>
+            </section>
+
+            <section id="parameters">
+                <h2>Scenario Outline with Examples</h2>
+                <p>Utilizing Scenario Outline and Examples to create data-driven tests in Cucumber.</p>
+            </section>
+
+            <section id="background">
+                <h2>Using Background in Feature Files</h2>
+                <p>Applying Background to define common preconditions for scenarios in feature files.</p>
+            </section>
+
+            <section id="reports">
+                <h2>Generating Reports with Cucumber</h2>
+                <p>Configuring plugins and tools to generate comprehensive reports for test execution results.</p>
+            </section>
+
+            <section id="bestpractices">
+                <h2>Best Practices for Java Cucumber BDD</h2>
+                <p>Recommended practices and tips for effective implementation and maintenance of Cucumber BDD tests in Java projects.</p>
+            </section>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
